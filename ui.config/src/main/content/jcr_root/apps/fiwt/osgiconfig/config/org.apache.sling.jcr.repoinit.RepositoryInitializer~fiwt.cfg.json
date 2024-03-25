@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/fiwt",
+        "create path (nt:unstructured) /content/dam/fiwt/jcr:content",
+        "set properties on /content/dam/fiwt/jcr:content\n  set cq:conf{String} to /conf/fiwt\n  set jcr:title{String} to \"FIWT Sites Project\"\nend"
+    ]
+}
