@@ -19,6 +19,7 @@ import static org.apache.sling.api.resource.ResourceResolver.PROPERTY_RESOURCE_T
 
 import javax.annotation.PostConstruct;
 
+import com.adobe.aem.social.fiwt.core.services.ServiceResourceResolver;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Default;
@@ -30,6 +31,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
+import org.osgi.service.component.annotations.Reference;
 
 import java.util.Optional;
 
@@ -47,8 +49,14 @@ public class HelloWorldModel {
 
     private String message;
 
+    @Reference
+    ServiceResourceResolver serviceResourceResolver;
+
     @PostConstruct
     protected void init() {
+        if (serviceResourceResolver != null) {
+            ResourceResolver ss = serviceResourceResolver.getResourceResolver();
+        }
         PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
         String currentPagePath = Optional.ofNullable(pageManager)
                 .map(pm -> pm.getContainingPage(currentResource))
