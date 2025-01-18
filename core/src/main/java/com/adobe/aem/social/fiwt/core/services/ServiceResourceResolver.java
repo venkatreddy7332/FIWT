@@ -26,9 +26,6 @@ public class ServiceResourceResolver {
         } catch (LoginException e) {
             e.printStackTrace();
         }
-
-
-
         return resolver;
 
     }

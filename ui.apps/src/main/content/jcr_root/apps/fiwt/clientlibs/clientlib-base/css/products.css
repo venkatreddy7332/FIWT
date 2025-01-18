@@ -2,7 +2,8 @@
     text-align:center;
 }
 .product {
-    width: 300px;
+    width: 400px;
+    height:600px;
     border: 3px solid black;
     padding: 14px;
     margin: 10px;
@@ -32,3 +33,12 @@
     object-fit: cover;
     border-radius: 5px;
 }
+.fullDetails{
+    display: -webkit-box;                 /* Use flexbox for multi-line support */
+    -webkit-line-clamp: 2;                /* Limit to 2 lines */
+    -webkit-box-orient: vertical;         /* Vertical orientation for flexbox */
+    overflow: hidden;                     /* Hide the overflowing text */
+    text-overflow: ellipsis;
+}
+
+
