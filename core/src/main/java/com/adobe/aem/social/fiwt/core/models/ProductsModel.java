@@ -1,9 +1,11 @@
 package com.adobe.aem.social.fiwt.core.models;
 
+import com.adobe.aem.social.fiwt.core.services.GeneralAPIConfigService;
 import com.adobe.aem.social.fiwt.core.services.JsonFromThirdPartyService;
 import com.adobe.aem.social.fiwt.core.services.ServiceResourceResolver;
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
@@ -37,6 +39,15 @@ public class ProductsModel  implements ComponentExporter {
     @OSGiService
     private ServiceResourceResolver serviceResourceResolver;
 
+    @OSGiService
+    private GeneralAPIConfigService generalAPIConfigService;
+
+    @JsonInclude
+    private String api1;
+
+    @JsonInclude
+    private String gender;
+
     @PostConstruct
     protected void init(){
         if (url != null && jsonFromThirdPartyService != null){
@@ -67,5 +78,15 @@ public class ProductsModel  implements ComponentExporter {
     @Override
     public String getExportedType() {
         return exportedType;
+    }
+
+    public String getApi1() {
+        api1=generalAPIConfigService.getApi1();
+        return api1;
+    }
+
+    public String getGender() {
+        gender=generalAPIConfigService.getGender();
+        return gender;
     }
 }
