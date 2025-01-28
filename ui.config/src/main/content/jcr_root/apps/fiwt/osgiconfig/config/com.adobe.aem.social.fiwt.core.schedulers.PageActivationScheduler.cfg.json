@@ -1,0 +1,7 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "schedulerName":"mySchedulerPage",
+  "enable":true,
+  "pagePath":"/content/fiwt/us/en/test",
+  "cronExpression":"*/2 * * * * ?"
+}

@@ -1,5 +1,6 @@
 package com.adobe.aem.social.fiwt.core.listner;
 
+import com.day.cq.mailer.MessageGatewayService;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.event.Event;
 import org.osgi.service.event.EventConstants;
@@ -18,6 +19,7 @@ import org.slf4j.LoggerFactory;
 public class PageModifiedEventHandler implements EventHandler {
 
     private static final Logger log= LoggerFactory.getLogger(PageModifiedEventHandler.class);
+
 
     @Override
     public void handleEvent(Event event) {
