@@ -92,6 +92,10 @@
             </container>
         </root>
     </jcr:content>
-    <test/>
     <home/>
+    <about/>
+    <property/>
+    <pages/>
+    <conatct/>
+    <test/>
 </jcr:root>

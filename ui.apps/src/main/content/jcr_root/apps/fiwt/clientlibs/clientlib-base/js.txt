@@ -7,3 +7,5 @@ owl.carousel.min.js
 waypoints.min.js
 wow.js
 wow.min.js
+code-jquery.js
+bootstrap.js

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:mixinTypes="[granite:AuthenticationRequired]"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-01-29T00:19:30.068+05:30"
+        cq:lastModified="{Date}2025-01-29T19:03:38.779+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/fiwt/settings/wcm/templates/makaan-home-page"
         jcr:primaryType="cq:PageContent"
         jcr:title="Home Page"
         sling:resourceType="fiwt/components/page"
-        id="container-xxl"
         navTitle="Makaan Home Page"
         pageTitle="Makaan Home Page"
         pwaCachestrategy="staleWhileRevalidate"
@@ -22,16 +22,72 @@
             <navbar
                 jcr:created="{Date}2025-01-28T23:30:09.738+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2025-01-28T23:30:09.738+05:30"
+                jcr:lastModified="{Date}2025-01-29T15:12:11.225+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="fiwt/components/custom/navBar"/>
+                sling:resourceType="fiwt/components/custom/navBar"
+                btnLinkURL="/content/fiwt/lm/en/property/addProperty"
+                btnText="Add Property"
+                heading="Makaan"
+                id="makaanNavigation"
+                logoAlt="logo"
+                LogoLinkURL="/content/fiwt/lm/en/home"
+                logoReference="/content/dam/fiwt/makaan/icon-deal.png">
+                <navigations jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/home"
+                        navLabel="HOME"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/about"
+                        navLabel="ABOUT"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/property"
+                        navLabel="PROPERTY">
+                        <subNavigations jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/property/propertyList"
+                                subNavLabel="Property List"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/property/propertyType"
+                                subNavLabel="Property Type"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/property/propertyAgent"
+                                subNavLabel="Property Agent"/>
+                        </subNavigations>
+                    </item2>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/pages"
+                        navLabel="PAGES">
+                        <subNavigations jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/pages/testimonial"
+                                subNavLabel="Testimonial"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/pages/errorPage"
+                                subNavLabel="404 Page"/>
+                        </subNavigations>
+                    </item3>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/conatct"
+                        navLabel="CONTACT"/>
+                </navigations>
+            </navbar>
         </root>
         <cq:featuredimage
-            jcr:lastModified="{Date}2025-01-29T00:19:30.053+05:30"
+            jcr:lastModified="{Date}2025-01-29T19:03:38.759+05:30"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="core/wcm/components/image/v3/image"
-            altValueFromDAM="false"/>
+            altValueFromDAM="true"/>
     </jcr:content>
 </jcr:root>

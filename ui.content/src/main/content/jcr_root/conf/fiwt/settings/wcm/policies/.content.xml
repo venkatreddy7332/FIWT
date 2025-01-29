@@ -353,11 +353,13 @@
                         jcr:primaryType="nt:unstructured"
                         mergeList="{Boolean}true"/>
                     <default
-                        jcr:description="Policy of the default page"
+                        jcr:lastModified="{Date}2025-01-29T18:55:12.036+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Default Page"
+                        jcr:title="Makaan Home Page"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="[wcm.foundation.components.page.responsive]">
+                        clientlibs="wcm.foundation.components.page.responsive"
+                        clientlibsAsync="true">
                         <jcr:content
                             jcr:primaryType="nt:unstructured"
                             mergeList="{Boolean}true"/>
@@ -368,8 +370,9 @@
                         jcr:primaryType="nt:unstructured"
                         mergeList="{Boolean}true"/>
                     <default
+                        cq:styleDefaultClasses="container-xxl bg-white p-0"
                         jcr:description="Policy of the default root parsys"
-                        jcr:lastModified="{Date}2025-01-28T23:21:59.727+05:30"
+                        jcr:lastModified="{Date}2025-01-29T18:18:43.233+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Default Layout Container"
