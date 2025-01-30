@@ -3,7 +3,7 @@
     jcr:mixinTypes="[granite:AuthenticationRequired]"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-01-30T22:13:38.026+05:30"
+        cq:lastModified="{Date}2025-01-30T23:24:37.794+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/fiwt/settings/wcm/templates/makaan-home-page"
         jcr:primaryType="cq:PageContent"
@@ -104,6 +104,49 @@
                         carouselReference="/content/dam/fiwt/makaan/carousel-4.jpg"/>
                 </carouselImgs>
             </carouselheader>
+            <productscategory
+                jcr:created="{Date}2025-01-30T22:55:55.269+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-01-30T23:24:37.786+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fiwt/components/custom/productsCategory"
+                description="Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo."
+                heading="Property Categories"
+                id="productCategory">
+                <categories jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-villa.png"
+                        name="Villa"
+                        totalProperties="123"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-neighborhood.png"
+                        name="Neighborhood"
+                        totalProperties="120"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-housing.png"
+                        name="Housing"
+                        totalProperties="281"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-house.png"
+                        name="House"
+                        totalProperties="780"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-condominium.png"
+                        name="Condominium"
+                        totalProperties="22"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-apartment.png"
+                        name="Apartment"
+                        totalProperties="230"/>
+                </categories>
+            </productscategory>
         </root>
         <cq:featuredimage
             jcr:lastModified="{Date}2025-01-29T22:01:40.383+05:30"
