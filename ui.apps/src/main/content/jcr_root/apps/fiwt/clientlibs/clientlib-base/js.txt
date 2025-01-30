@@ -1,11 +1,9 @@
 #base=js
+owl.carousel.js
+owl.carousel.min.js
+wow.js
 easing.js
 easing.min.js
 main.js
-owl.carousel.js
-owl.carousel.min.js
 waypoints.min.js
-wow.js
 wow.min.js
-code-jquery.js
-bootstrap.js

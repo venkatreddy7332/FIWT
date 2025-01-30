@@ -1,0 +1,8 @@
+<sly data-sly-use.model="com.adobe.aem.social.fiwt.core.models.CarouselBannerModel" />
+
+<sly data-sly-test="${model.type == 'header'}">
+    <sly data-sly-include="header.html"/>
+</sly>
+<sly data-sly-test="${model.type == 'carousel'}">
+    <sly data-sly-include="carousel.html" />
+</sly>

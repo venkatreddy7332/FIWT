@@ -3,7 +3,7 @@
     jcr:mixinTypes="[granite:AuthenticationRequired]"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-01-29T19:03:38.779+05:30"
+        cq:lastModified="{Date}2025-01-30T22:13:38.026+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/fiwt/settings/wcm/templates/makaan-home-page"
         jcr:primaryType="cq:PageContent"
@@ -82,12 +82,35 @@
                         navLabel="CONTACT"/>
                 </navigations>
             </navbar>
+            <carouselheader
+                jcr:created="{Date}2025-01-29T19:38:33.481+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-01-30T22:13:38.019+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fiwt/components/custom/carouselHeader"
+                text="&lt;h1 class=&quot;display-5 animated fadeIn mb-4&quot;>Find A &lt;span class=&quot;text-primary&quot;>Perfect Home&lt;/span> To Live With Your Family&lt;/h1>&#xd;&#xa;&lt;p class=&quot;animated fadeIn mb-4 pb-2&quot;>Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.&lt;/p>&#xd;&#xa;&lt;a class=&quot;btn btn-primary py-3 px-5 me-3 animated fadeIn&quot;>Get Started&lt;/a>&#xd;&#xa;"
+                textIsRich="true"
+                type="carousel">
+                <carouselImgs jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        carouselReference="/content/dam/fiwt/makaan/carousel-1.jpg"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        carouselReference="/content/dam/fiwt/makaan/carousel-2.jpg"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        carouselReference="/content/dam/fiwt/makaan/carousel-4.jpg"/>
+                </carouselImgs>
+            </carouselheader>
         </root>
         <cq:featuredimage
-            jcr:lastModified="{Date}2025-01-29T19:03:38.759+05:30"
+            jcr:lastModified="{Date}2025-01-29T22:01:40.383+05:30"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="core/wcm/components/image/v3/image"
-            altValueFromDAM="true"/>
+            altValueFromDAM="true"
+            fileReference="/content/dam/fiwt/makaan/carousel-1.jpg"/>
     </jcr:content>
 </jcr:root>
