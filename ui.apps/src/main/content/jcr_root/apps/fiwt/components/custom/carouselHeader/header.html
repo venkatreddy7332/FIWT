@@ -1,0 +1,19 @@
+<sly data-sly-use.model="com.adobe.aem.social.fiwt.core.models.CarouselBannerModel" />
+<sly data-sly-test="${model.carouselReference || model.heading}">
+    <div class="container-fluid header bg-white p-0">
+        <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-md-6 p-5 mt-lg-5">
+                <h1 class="display-5 animated fadeIn mb-4">${model.heading}</h1>
+                <nav aria-label="breadcrumb animated fadeIn">
+                    <ol class="breadcrumb text-uppercase" data-sly-list.pageDetails="${model.breadcrumbList}">
+                        <li class="breadcrumb-item ${pageDetails.active}" aria-current="page"><a
+                                href="${pageDetails.path @ extension='html'}">${pageDetails.name}</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-md-6 animated fadeIn">
+                <img class="img-fluid" src="${model.carouselReference}" alt="${model.heading}">
+            </div>
+        </div>
+    </div>
+</sly>

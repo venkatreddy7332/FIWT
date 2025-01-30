@@ -1,0 +1,7 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "service.ranking:Integer":50,
+  "user.mapping":[
+    "aem-social-fiwt.core:fiwt-subService=fiwt"
+  ]
+}

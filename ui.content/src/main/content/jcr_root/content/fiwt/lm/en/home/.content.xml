@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:mixinTypes="[granite:AuthenticationRequired]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2025-01-30T23:24:37.794+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/fiwt/settings/wcm/templates/makaan-home-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home Page"
+        sling:resourceType="fiwt/components/page"
+        navTitle="Makaan Home Page"
+        pageTitle="Makaan Home Page"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:lastModified="{Date}2025-01-28T23:22:04.537+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <navbar
+                jcr:created="{Date}2025-01-28T23:30:09.738+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-01-29T15:12:11.225+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fiwt/components/custom/navBar"
+                btnLinkURL="/content/fiwt/lm/en/property/addProperty"
+                btnText="Add Property"
+                heading="Makaan"
+                id="makaanNavigation"
+                logoAlt="logo"
+                LogoLinkURL="/content/fiwt/lm/en/home"
+                logoReference="/content/dam/fiwt/makaan/icon-deal.png">
+                <navigations jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/home"
+                        navLabel="HOME"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/about"
+                        navLabel="ABOUT"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/property"
+                        navLabel="PROPERTY">
+                        <subNavigations jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/property/propertyList"
+                                subNavLabel="Property List"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/property/propertyType"
+                                subNavLabel="Property Type"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/property/propertyAgent"
+                                subNavLabel="Property Agent"/>
+                        </subNavigations>
+                    </item2>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/pages"
+                        navLabel="PAGES">
+                        <subNavigations jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/pages/testimonial"
+                                subNavLabel="Testimonial"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/pages/errorPage"
+                                subNavLabel="404 Page"/>
+                        </subNavigations>
+                    </item3>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/conatct"
+                        navLabel="CONTACT"/>
+                </navigations>
+            </navbar>
+            <carouselheader
+                jcr:created="{Date}2025-01-29T19:38:33.481+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-01-30T22:13:38.019+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fiwt/components/custom/carouselHeader"
+                text="&lt;h1 class=&quot;display-5 animated fadeIn mb-4&quot;>Find A &lt;span class=&quot;text-primary&quot;>Perfect Home&lt;/span> To Live With Your Family&lt;/h1>&#xd;&#xa;&lt;p class=&quot;animated fadeIn mb-4 pb-2&quot;>Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.&lt;/p>&#xd;&#xa;&lt;a class=&quot;btn btn-primary py-3 px-5 me-3 animated fadeIn&quot;>Get Started&lt;/a>&#xd;&#xa;"
+                textIsRich="true"
+                type="carousel">
+                <carouselImgs jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        carouselReference="/content/dam/fiwt/makaan/carousel-1.jpg"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        carouselReference="/content/dam/fiwt/makaan/carousel-2.jpg"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        carouselReference="/content/dam/fiwt/makaan/carousel-4.jpg"/>
+                </carouselImgs>
+            </carouselheader>
+            <productscategory
+                jcr:created="{Date}2025-01-30T22:55:55.269+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-01-30T23:24:37.786+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fiwt/components/custom/productsCategory"
+                description="Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo."
+                heading="Property Categories"
+                id="productCategory">
+                <categories jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-villa.png"
+                        name="Villa"
+                        totalProperties="123"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-neighborhood.png"
+                        name="Neighborhood"
+                        totalProperties="120"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-housing.png"
+                        name="Housing"
+                        totalProperties="281"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-house.png"
+                        name="House"
+                        totalProperties="780"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-condominium.png"
+                        name="Condominium"
+                        totalProperties="22"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        imgReference="/content/dam/fiwt/makaan/icon-apartment.png"
+                        name="Apartment"
+                        totalProperties="230"/>
+                </categories>
+            </productscategory>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2025-01-29T22:01:40.383+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="true"
+            fileReference="/content/dam/fiwt/makaan/carousel-1.jpg"/>
+    </jcr:content>
+</jcr:root>

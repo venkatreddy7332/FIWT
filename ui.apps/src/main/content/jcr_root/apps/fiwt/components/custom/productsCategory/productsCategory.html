@@ -1,0 +1,35 @@
+<sly data-sly-use.model="com.adobe.aem.social.fiwt.core.models.ProductCategoryModel"/>
+<sly data-sly-test="${model.heading || model.description || model.categories}">
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+        <sly data-sly-test="${model.heading}">
+            <h1 class="mb-3">${model.heading}</h1>
+        </sly> 
+        <sly data-sly-test="${model.description}">
+            <p>${model.description}</p>
+        </sly>        
+        </div>
+        <sly data-sly-test="${model.categories}">
+            <div class="row g-4">
+            <sly data-sly-list.item="${model.categories}">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.${itemList.count}s">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                        <div class="rounded p-4">
+                            <div class="icon mb-3">
+                                <img class="img-fluid" src="${item.imgReference}" alt="${item.name}">
+                            </div>
+                            <h6>${item.name}</h6>
+                            <span>${item.totalProperties} Properties</span>
+                        </div>
+                    </a>
+                </div>
+            </sly>
+            </div>
+        </sly>
+    </div>
+</div>
+</sly>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-teaser'}"></sly>
