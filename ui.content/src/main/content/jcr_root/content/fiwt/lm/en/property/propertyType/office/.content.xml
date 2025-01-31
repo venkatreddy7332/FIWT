@@ -2,23 +2,16 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-01-29T15:02:54.958+05:30"
+        cq:lastModified="{Date}2025-01-31T16:11:22.092+05:30"
         cq:lastModifiedBy="admin"
-        cq:template="/conf/fiwt/settings/wcm/templates/property-page-template"
+        cq:template="/conf/fiwt/settings/wcm/templates/properties-template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Property Type"
-        sling:resourceType="fiwt/components/page"
-        navTitle="Property Type"
-        pageTitle="Property Type">
+        jcr:title="Office"
+        sling:resourceType="fiwt/components/page">
         <root
-            jcr:lastModified="{Date}2025-01-29T15:01:03.228+05:30"
+            jcr:lastModified="{Date}2025-01-31T13:34:25.475+05:30"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid"/>
     </jcr:content>
-    <apartment/>
-    <house/>
-    <housing/>
-    <villa/>
-    <office/>
 </jcr:root>
