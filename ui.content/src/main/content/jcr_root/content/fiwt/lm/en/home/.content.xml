@@ -3,7 +3,11 @@
     jcr:mixinTypes="[granite:AuthenticationRequired]"
     jcr:primaryType="cq:Page">
     <jcr:content
+<<<<<<< Updated upstream
         cq:lastModified="{Date}2025-01-31T16:49:30.320+05:30"
+=======
+        cq:lastModified="{Date}2025-01-31T23:44:01.358+05:30"
+>>>>>>> Stashed changes
         cq:lastModifiedBy="admin"
         cq:template="/conf/fiwt/settings/wcm/templates/makaan-home-page"
         jcr:primaryType="cq:PageContent"
@@ -107,7 +111,11 @@
             <propertysearch
                 jcr:created="{Date}2025-01-31T14:10:09.163+05:30"
                 jcr:createdBy="admin"
+<<<<<<< Updated upstream
                 jcr:lastModified="{Date}2025-01-31T16:49:30.310+05:30"
+=======
+                jcr:lastModified="{Date}2025-01-31T17:45:01.516+05:30"
+>>>>>>> Stashed changes
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/propertySearch"
@@ -205,6 +213,64 @@
                         totalProperties="230"/>
                 </categories>
             </productscategory>
+            <aboutproperty
+                jcr:created="{Date}2025-01-31T17:48:04.883+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-01-31T23:44:01.348+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fiwt/components/custom/aboutProperty"
+                btnId="aboutReadmore"
+                btnLink="/content/fiwt/lm/en/about"
+                btnText="[Read More]"
+                id="ddddd"
+                reverse="false">
+                <left
+                    jcr:lastModified="{Date}2025-01-31T23:44:01.348+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    alt="House"
+                    imageReference="/content/dam/fiwt/makaan/carousel-4.jpg"
+                    type="image"/>
+                <right
+                    jcr:lastModified="{Date}2025-01-31T23:44:01.348+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    btnId="readmoreButton"
+                    btnLink="/content/fiwt/lm/en/about"
+                    btnText="Read More"
+                    description="Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet"
+                    heading="#1 Place To Find The Perfect Property"
+                    notes="[notes notes  notes notes  notes ,notes 1 notes  1 notes  1]"
+                    type="text"/>
+            </aboutproperty>
+            <aboutproperty_1402410612
+                jcr:created="{Date}2025-01-31T23:24:07.846+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-01-31T23:43:53.271+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fiwt/components/custom/aboutProperty"
+                reverse="false">
+                <left
+                    jcr:lastModified="{Date}2025-01-31T23:43:53.271+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    btnId="readmoreButton"
+                    btnLink="/content/fiwt/lm/en/about"
+                    btnText="Read More"
+                    description="Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet"
+                    heading="#1 Place To Find The Perfect Property"
+                    notes="[notes 1 notes  1 notes  1,notes 1 notes  1 notes  1]"
+                    type="text"/>
+                <right
+                    jcr:lastModified="{Date}2025-01-31T23:43:53.271+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    alt="deeee"
+                    imageReference="/content/dam/fiwt/makaan/header.jpg"
+                    type="image"/>
+            </aboutproperty_1402410612>
         </root>
         <cq:featuredimage
             jcr:lastModified="{Date}2025-01-29T22:01:40.383+05:30"

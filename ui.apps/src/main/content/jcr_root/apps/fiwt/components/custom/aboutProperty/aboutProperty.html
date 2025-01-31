@@ -1,0 +1,57 @@
+<sly data-sly-use.model="com.adobe.aem.social.fiwt.core.models.AboutPropertyModel"/>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-teaser'}"></sly>
+<sly data-sly-set.flexReverse="${model.reverse=='true'? 'flex-row-reverse' : ''}"/>
+
+<sly data-sly-test="${model.leftvalueMap || model.rightvalueMap}">
+<div class="container-xxl py-5" id="${model.id}">
+    <div class="container">
+        <div class="row g-5 align-items-center ${flexReverse}">
+            <sly data-sly-test.leftSection="${model.leftvalueMap}">
+                <sly data-sly-test="${leftSection.type == 'image'}">
+                    <sly data-sly-call="${image @ obj=leftSection}" data-sly-unwrap/>
+                </sly>
+                <sly data-sly-test="${leftSection.type == 'text'}">
+                    <sly data-sly-call="${text @ obj2=leftSection}" data-sly-unwrap/>
+                </sly>
+                
+            </sly>
+            
+            <sly data-sly-test.rightSection="${model.rightvalueMap}">
+                <sly data-sly-test="${rightSection.type == 'image'}">
+                    <sly data-sly-call="${image @ obj=rightSection}" data-sly-unwrap/>
+                </sly>
+                <sly data-sly-test="${rightSection.type == 'text'}">
+                    <sly data-sly-call="${text @ obj2=rightSection}" data-sly-unwrap/>
+                </sly>
+                
+            </sly>
+            
+        </div>
+    </div>
+</div>
+</sly>
+
+
+<sly data-sly-template.image="${ @ obj}">
+	<div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                    <img class="img-fluid w-100" src="${obj.imageReference}" alt="${obj.alt}">
+                </div>
+            </div>
+</sly>
+
+<sly data-sly-template.text="${ @ obj2}">
+	<div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                <h1 class="mb-4">${obj2.heading}</h1>
+                <p class="mb-4">${obj2.description}</p>
+                <sly data-sly-test="${obj2.notes}">
+                	<sly data-sly-list.item="${obj2.notes}">
+                        <p><i class="fa fa-check text-primary me-3"></i>${item}</p>
+                    </sly>
+                </sly>
+                <sly data-sly-test="${obj2.btnText}">
+                	<a class="btn btn-primary py-3 px-5 mt-3" href="${obj2.btnLink @ extension='html'}" id="${obj2.btnId}">${obj2.btnText}</a>
+                </sly>
+            </div>
+</sly>
