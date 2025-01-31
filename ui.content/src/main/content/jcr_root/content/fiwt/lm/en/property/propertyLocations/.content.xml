@@ -2,23 +2,30 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-01-29T15:02:54.958+05:30"
+        cq:lastModified="{Date}2025-01-31T13:56:40.793+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/fiwt/settings/wcm/templates/property-page-template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Property Type"
+        jcr:title="Property Loactions"
         sling:resourceType="fiwt/components/page"
-        navTitle="Property Type"
-        pageTitle="Property Type">
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
         <root
             jcr:lastModified="{Date}2025-01-29T15:01:03.228+05:30"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid"/>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2025-01-31T13:56:40.771+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
     </jcr:content>
-    <apartment/>
-    <house/>
-    <housing/>
-    <villa/>
-    <office/>
+    <hyderabad/>
+    <delhi/>
+    <banglore/>
+    <pune/>
+    <chennai/>
 </jcr:root>
