@@ -3,19 +3,7 @@
     jcr:mixinTypes="[granite:AuthenticationRequired]"
     jcr:primaryType="cq:Page">
     <jcr:content
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        cq:lastModified="{Date}2025-01-31T16:49:30.320+05:30"
-=======
-        cq:lastModified="{Date}2025-01-31T23:44:01.358+05:30"
->>>>>>> Stashed changes
-=======
-        cq:lastModified="{Date}2025-01-31T23:44:01.358+05:30"
->>>>>>> Stashed changes
-=======
-        cq:lastModified="{Date}2025-01-31T23:44:01.358+05:30"
->>>>>>> Stashed changes
+        cq:lastModified="{Date}2025-02-01T21:33:53.718+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/fiwt/settings/wcm/templates/makaan-home-page"
         jcr:primaryType="cq:PageContent"
@@ -34,11 +22,11 @@
             <navbar
                 jcr:created="{Date}2025-01-28T23:30:09.738+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2025-01-29T15:12:11.225+05:30"
+                jcr:lastModified="{Date}2025-02-01T21:33:53.703+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/navBar"
-                btnLinkURL="/content/fiwt/lm/en/property/addProperty"
+                btnLinkURL="/content/fiwt/lm/en/home/properties/addProperty"
                 btnText="Add Property"
                 heading="Makaan"
                 id="makaanNavigation"
@@ -56,20 +44,20 @@
                         navLabel="ABOUT"/>
                     <item2
                         jcr:primaryType="nt:unstructured"
-                        linkURL="/content/fiwt/lm/en/property"
+                        linkURL="/content/fiwt/lm/en/home/properties"
                         navLabel="PROPERTY">
                         <subNavigations jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                linkURL="/content/fiwt/lm/en/property/propertyList"
+                                linkURL="/content/fiwt/lm/en/home/properties/propertyList"
                                 subNavLabel="Property List"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
-                                linkURL="/content/fiwt/lm/en/property/propertyType"
+                                linkURL="/content/fiwt/lm/en/home/properties/propertyType"
                                 subNavLabel="Property Type"/>
                             <item2
                                 jcr:primaryType="nt:unstructured"
-                                linkURL="/content/fiwt/lm/en/property/propertyAgent"
+                                linkURL="/content/fiwt/lm/en/home/properties/propertyAgent"
                                 subNavLabel="Property Agent"/>
                         </subNavigations>
                     </item2>
@@ -119,19 +107,7 @@
             <propertysearch
                 jcr:created="{Date}2025-01-31T14:10:09.163+05:30"
                 jcr:createdBy="admin"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                jcr:lastModified="{Date}2025-01-31T16:49:30.310+05:30"
-=======
                 jcr:lastModified="{Date}2025-01-31T17:45:01.516+05:30"
->>>>>>> Stashed changes
-=======
-                jcr:lastModified="{Date}2025-01-31T17:45:01.516+05:30"
->>>>>>> Stashed changes
-=======
-                jcr:lastModified="{Date}2025-01-31T17:45:01.516+05:30"
->>>>>>> Stashed changes
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/propertySearch"
@@ -140,9 +116,9 @@
                 id="propertySearch"
                 inputId="searchInput"
                 locationId="locationType"
-                locationsPath="/content/fiwt/lm/en/property/propertyLocations"
+                locationsPath="/content/fiwt/lm/en/home/properties/propertyLocations"
                 placeholder="Search Here"
-                propertiesPath="/content/fiwt/lm/en/property/propertyType"
+                propertiesPath="/content/fiwt/lm/en/home/properties/propertyType"
                 propertyTypeId="propertyType"
                 type="manually">
                 <typeOptions jcr:primaryType="nt:unstructured">
@@ -260,33 +236,6 @@
                     notes="[notes notes  notes notes  notes ,notes 1 notes  1 notes  1]"
                     type="text"/>
             </aboutproperty>
-            <aboutproperty_1402410612
-                jcr:created="{Date}2025-01-31T23:24:07.846+05:30"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2025-01-31T23:43:53.271+05:30"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="fiwt/components/custom/aboutProperty"
-                reverse="false">
-                <left
-                    jcr:lastModified="{Date}2025-01-31T23:43:53.271+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    btnId="readmoreButton"
-                    btnLink="/content/fiwt/lm/en/about"
-                    btnText="Read More"
-                    description="Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet"
-                    heading="#1 Place To Find The Perfect Property"
-                    notes="[notes 1 notes  1 notes  1,notes 1 notes  1 notes  1]"
-                    type="text"/>
-                <right
-                    jcr:lastModified="{Date}2025-01-31T23:43:53.271+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    alt="deeee"
-                    imageReference="/content/dam/fiwt/makaan/header.jpg"
-                    type="image"/>
-            </aboutproperty_1402410612>
         </root>
         <cq:featuredimage
             jcr:lastModified="{Date}2025-01-29T22:01:40.383+05:30"
@@ -296,4 +245,5 @@
             altValueFromDAM="true"
             fileReference="/content/dam/fiwt/makaan/carousel-1.jpg"/>
     </jcr:content>
+    <properties/>
 </jcr:root>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listing Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn { background: #28a745; }
+        .clear-btn { background: #dc3545; }
+        button:hover { opacity: 0.8; }
+        .image-preview {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Property Listing Form</h2>
+        <form id="propertyForm">
+            <!-- Image Upload -->
+            <label>Property Image:</label>
+            <input type="file" id="propertyImage" accept="image/*" required>
+            <div class="image-preview" id="imagePreview">Preview</div>
+
+            <!-- Property Details -->
+            <label>Property Tag:</label>
+            <select id="propertyTag" required>
+                <option value="SELL">For Sell</option>
+                <option value="RENT">For Rent</option>
+            </select>
+
+            <label>Property Type:</label>
+            <select id="propertyType" required>
+                <option value="house">House</option>
+                <option value="office">Office</option>
+                <option value="villa">Villa</option>
+                <option value="housing">Housing</option>
+                <option value="apartment">Apartment</option>
+            </select>
+
+            <label>Price:</label>
+            <input type="number" id="price" required>
+
+            <label>Title:</label>
+            <input type="text" id="title" required>
+
+            <label>Description:</label>
+            <textarea id="description"></textarea>
+
+            <label>Address:</label>
+            <textarea id="address" required></textarea>
+
+            <label>Area (sq ft):</label>
+            <input type="number" id="area" required>
+
+            <label>Bedrooms:</label>
+            <input type="number" id="bedrooms">
+
+            <label>Restrooms:</label>
+            <input type="number" id="restrooms">
+
+            <label>Any Other (Specify):</label>
+            <input type="text" id="other">
+
+            <!-- Owner Details -->
+            <label>Owner Name:</label>
+            <input type="text" id="ownerName" required>
+
+            <label>Owner Contact:</label>
+            <input type="tel" id="ownerContact" required>
+
+            <label>Owner Email:</label>
+            <input type="email" id="ownerEmail" required>
+
+            <label>City Location:</label>
+            <input type="text" id="cityLocation" required>
+
+            <label>
+                <input type="checkbox" id="isNegotiable"> Is Negotiable
+            </label>
+
+            <label>Any Discount:</label>
+            <input type="text" id="discount">
+
+            <label>Documents Verified By:</label>
+            <input type="text" id="verifiedBy" required>
+
+            <!-- Buttons -->
+            <div class="btn-container">
+                <button type="button" class="submit-btn" onclick="submitForm()">Submit</button>
+                <button type="button" class="clear-btn" onclick="clearForm()">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    
+
+</body>
+</html>

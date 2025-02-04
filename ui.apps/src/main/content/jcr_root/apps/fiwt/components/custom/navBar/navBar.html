@@ -1,6 +1,6 @@
 <sly data-sly-use.model="com.adobe.aem.social.fiwt.core.models.NavBarModel"/>
 <sly data-sly-set.logoUrl="${model.LogoLinkURL @ extension='html'}"/>
-<div class="nav-bar" id= "${model.id}" data-sly-test="${model.heading || model.logoReference || model.navigationsList}">
+<div id= "${model.id}" data-sly-test="${model.heading || model.logoReference || model.navigationsList}">
     <div class="container-fluid nav-bar bg-transparent">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
             <a href="${model.LogoLinkURL ? logoUrl : '#'}" class="navbar-brand d-flex align-items-center text-center">
@@ -28,7 +28,7 @@
                                     <a href="${item.linkURL @ extension='html'}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">${item.navLabel}</a>
                                     <div class="dropdown-menu rounded-0 m-0">
                                         <sly data-sly-list.item2="${item.subNavigations}">
-                                            <a href="${item.linkURL @ extension='html'}" class="dropdown-item">${item2.subNavLabel}</a>
+                                            <a href="${item2.linkURL @ extension='html'}" class="dropdown-item">${item2.subNavLabel}</a>
                                         </sly>
                                     </div>
                                 </div>
