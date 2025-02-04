@@ -307,6 +307,16 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_436207244359208
+                    jcr:lastModified="{Date}2025-02-03T22:55:41.705+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Makaan"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[group:General,group:FIWT Sites Project - Content,group:FIWT Sites Project - Form,group:FIWT Sites Project - Structure]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_436207244359208>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -372,7 +382,7 @@
                     <default
                         cq:styleDefaultClasses="container-xxl bg-white p-0"
                         jcr:description="Policy of the default root parsys"
-                        jcr:lastModified="{Date}2025-01-31T13:34:06.156+05:30"
+                        jcr:lastModified="{Date}2025-02-03T23:04:53.923+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Default Layout Container"
@@ -413,6 +423,42 @@
                         <jcr:content
                             jcr:primaryType="nt:unstructured"
                             mergeList="{Boolean}true"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="float"
+                                cq:styleGroupMultiple="true"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="left--"
+                                        cq:styleId="1738603895135"
+                                        cq:styleLabel="float left"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="right--"
+                                        cq:styleId="1738603914911"
+                                        cq:styleLabel="float right"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                            <item1
+                                cq:styleGroupLabel="padding"
+                                cq:styleGroupMultiple="true"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="leftpp--"
+                                        cq:styleId="1738603995999"
+                                        cq:styleLabel="padding left"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="rightpp--"
+                                        cq:styleId="1738604009597"
+                                        cq:styleLabel="padding right"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item1>
+                        </cq:styleGroups>
                     </default>
                 </responsivegrid>
             </components>

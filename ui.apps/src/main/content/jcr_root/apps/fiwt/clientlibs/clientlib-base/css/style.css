@@ -258,7 +258,19 @@
 .cat-item:hover div * {
     color: #FFFFFF !important;
 }
-
+.properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left:30px;
+    padding-top:30px;
+;
+}
+.propertyList{
+width:450px;
+}
 
 /*** Property List ***/
 .nav-pills .nav-item .btn {
