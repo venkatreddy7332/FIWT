@@ -21,7 +21,8 @@ public class CategoriesCards {
 
     public String getName() {
         alt=name.toLowerCase();
-        return name.toUpperCase();
+       name = name.substring(0, 1).toUpperCase() + name.substring(1);
+        return name;
     }
 
     public int getTotalProperties() {
