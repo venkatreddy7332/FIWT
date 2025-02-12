@@ -5,8 +5,8 @@
     <page-content/>
     <xf-web-variation/>
     <rep:policy/>
-    <makaan-home-page/>
     <makaan-page/>
     <property-page-template/>
     <properties-template/>
+    <makaan-home-page/>
 </jcr:root>

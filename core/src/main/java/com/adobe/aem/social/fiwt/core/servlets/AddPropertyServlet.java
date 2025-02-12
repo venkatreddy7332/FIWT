@@ -18,6 +18,8 @@ import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import javax.servlet.http.Part;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Random;
 
 @Component(service = Servlet.class,
@@ -53,7 +55,7 @@ public class AddPropertyServlet extends SlingAllMethodsServlet {
                     String[] parameterNames = {"propertyTag", "propertyType", "price", "title", "description", "address", "area", "bedrooms", "restrooms", "other", "ownerName", "ownerContact", "ownerEmail", "cityLocation", "isNegotiable", "discount", "verifiedBy"};
                     componentNode.setProperty("pid", request.getParameter("propertyTag") + id);
                     componentNode.setProperty("sling:resourceType", componentSlingResourceType);
-
+                    componentNode.setProperty("jcr:created", LocalDateTime.now().toString());
                     componentNode.setProperty( "propertyImage", "/content/dam/fiwt/makaan/property-1.jpg");
                     for (int i = 0; i < parameterNames.length; i++) {
                         componentNode.setProperty(parameterNames[i], getRequestParameter(request, parameterNames[i]));
