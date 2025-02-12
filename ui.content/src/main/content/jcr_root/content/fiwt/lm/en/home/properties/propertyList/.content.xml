@@ -11,7 +11,7 @@
         jcr:title="Property List"
         jcr:uuid="29ffc62f-e7ba-4664-958f-a3330e97c450"
         sling:resourceType="fiwt/components/page"
-        id="10000010"
+        id="10000011"
         navTitle="Property List"
         pageTitle="Property List">
         <root
@@ -21,6 +21,7 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <property10000000
+                jcr:created="2025-01-04T23:51:21.569193"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/properties"
                 address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
@@ -50,6 +51,7 @@
                 </cq:responsive>
             </property10000000>
             <property10000001
+                jcr:created="2025-01-06T23:51:21.569193"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/properties"
                 address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
@@ -72,6 +74,7 @@
                 title="United States"
                 verifiedBy="Bhavan"/>
             <property10000002
+                jcr:created="2025-01-08T23:51:21.569193"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/properties"
                 address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
@@ -94,6 +97,7 @@
                 title="United States"
                 verifiedBy="Bhavan"/>
             <property10000003
+                jcr:created="2025-01-11T23:51:21.569193"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/properties"
                 address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
@@ -116,6 +120,7 @@
                 title="United States"
                 verifiedBy="Bhavan"/>
             <property10000004
+                jcr:created="2025-01-15T23:51:21.569193"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/properties"
                 address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
@@ -138,6 +143,7 @@
                 title="United States"
                 verifiedBy="Bhavan"/>
             <property10000005
+                jcr:created="2025-01-17T23:51:21.569193"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/properties"
                 address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
@@ -160,6 +166,7 @@
                 title="United States"
                 verifiedBy="Bhavan"/>
             <property10000006
+                jcr:created="2025-01-19T23:51:21.569193"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/properties"
                 address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
@@ -182,6 +189,7 @@
                 title="United States"
                 verifiedBy="Bhavan"/>
             <property10000007
+                jcr:created="2025-01-21T23:51:21.569193"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/properties"
                 address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
@@ -204,6 +212,7 @@
                 title="United States"
                 verifiedBy="Bhavan"/>
             <property10000008
+                jcr:created="2025-01-23T23:51:21.569193"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/properties"
                 address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
@@ -226,6 +235,7 @@
                 title="United States"
                 verifiedBy="Bhavan"/>
             <property10000009
+                jcr:created="2025-01-25T23:51:21.569193"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/properties"
                 address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
@@ -248,6 +258,7 @@
                 title="United States"
                 verifiedBy="Bhavan"/>
             <property10000010
+                jcr:created="2025-01-28T23:51:21.569193"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/properties"
                 address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
@@ -269,6 +280,29 @@
                 restrooms="2"
                 title="United States"
                 verifiedBy="Bhavan"/>
+            <property10000011
+                jcr:created="2025-02-04T23:51:21.569193"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fiwt/components/custom/properties"
+                address="Plot No. 178, EPIP Phase- 2 Industrial&#xa;Area, Whitefield, Bangalore -560066, Karnataka"
+                area="3456"
+                bedrooms="4"
+                cityLocation="Pune"
+                description="Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet"
+                discount="no"
+                isNegotiable="true"
+                other="no"
+                ownerContact="0123456789"
+                ownerEmail="test@gmail.com"
+                ownerName="bhavan"
+                pid="SELL10000011"
+                price="34567"
+                propertyImage="/content/dam/fiwt/makaan/property-1.jpg"
+                propertyTag="SELL"
+                propertyType="villa"
+                restrooms="4"
+                title="United States"
+                verifiedBy="venkat"/>
         </root>
     </jcr:content>
 </jcr:root>
