@@ -1,51 +1,3 @@
-<sly data-sly-use.model="com.adobe.aem.social.fiwt.core.models.PropertyListModel"/>
-<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
-<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-teaser'}"></sly>
-<sly data-sly-test="${model.heading || model.description || model.filters}">
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-0 gx-5 align-items-end">
-                <sly data-sly-test="${model.heading || model.description}">
-                    <div class="col-lg-6">
-                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                            <sly data-sly-test="${model.heading}">
-                                <h1 class="mb-3">${model.heading}</h1>
-                            </sly>
-                            <sly data-sly-test="${model.description}">
-                                <p>${model.description}</p>
-                            </sly>
-                        </div>
-
-                    </div>
-                </sly>
-                <sly data-sly-test="${model.filters}">
-                    <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
-                        <ul class="nav nav-pills d-inline-flex justify-content-end mb-5"
-                            data-sly-list.filter="${model.filters}">
-                            <li class="nav-item me-2">
-                                <a class="btn btn-outline-primary getdata " data-bs-toggle="pill" href=""
-                                    filter="${filter.id}">${filter.text}</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </sly>
-                <sly data-sly-test="${model.browseMoreBtnText}">
-                <div class="tab-content" id="propertyListCards">
-                    <div id="browsemore">
-                        <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <a class="btn btn-primary py-3 px-5"
-                                href="${model.browseMoreBtnHref ? model.browseMoreBtnHref : '#' @extension='html'}">${model.browseMoreBtnText}</a>
-                        </div>
-                    </div>
-                </div>
-                </sly>
-            </div>
-        </div>
-</sly>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
 let browsemore = "";
     if (document.getElementById("browsemore")) {
         browsemore = document.getElementById("browsemore").innerHTML;
@@ -54,7 +6,7 @@ let browsemore = "";
     		getPropertyData(null);
         document.querySelectorAll(".getdata").forEach(btn => {
             btn.addEventListener("click", function (event) {
-                event.preventDefault(); 
+                event.preventDefault(); // Prevents the default anchor action (optional)
                 let filter = this.getAttribute("filter");
                 if (filter == "-") {
                     filter = null;
@@ -108,8 +60,3 @@ let browsemore = "";
                     }
                 });
     }
-</script>
-
-
-
-
