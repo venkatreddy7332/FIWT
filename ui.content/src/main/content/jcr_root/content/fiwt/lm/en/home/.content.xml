@@ -3,7 +3,7 @@
     jcr:mixinTypes="[granite:AuthenticationRequired]"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-02-12T13:32:04.878+05:30"
+        cq:lastModified="{Date}2025-02-12T15:23:51.877+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/fiwt/settings/wcm/templates/makaan-home-page"
         jcr:primaryType="cq:PageContent"
@@ -267,14 +267,14 @@
             <calltoaction
                 jcr:created="{Date}2025-02-12T13:14:53.097+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2025-02-12T13:32:04.869+05:30"
+                jcr:lastModified="{Date}2025-02-12T13:41:24.634+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/callToAction"
                 id="callToAction11"
-                reverse="true">
+                reverse="false">
                 <left
-                    jcr:lastModified="{Date}2025-02-12T13:32:04.869+05:30"
+                    jcr:lastModified="{Date}2025-02-12T13:41:24.634+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     alt="agentpic"
@@ -289,7 +289,7 @@
                     SecondaryBtnText="Get Appointment1"
                     type="image"/>
                 <right
-                    jcr:lastModified="{Date}2025-02-12T13:32:04.869+05:30"
+                    jcr:lastModified="{Date}2025-02-12T13:41:24.634+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     btnId="make-a-Call"
@@ -302,6 +302,62 @@
                     secondaryBtnText="Get Appointment"
                     type="text"/>
             </calltoaction>
+            <agentsteam
+                jcr:created="{Date}2025-02-12T13:59:44.921+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-02-12T15:23:51.865+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fiwt/components/custom/agentsTeam"
+                agentDesignation="[Real Estate Agent,Real Estate Agent ,Realtor,Realtor]"
+                agentImgReference="/content/dam/fiwt/makaan/team-4.jpg"
+                agentName="[Venkat,Venkat Reddy,Navaneetha,Fimidha]"
+                alt="[venkat Img,venkatreddy img,navaneetha Img,Fimidha]"
+                description="At Makkan, our expert property agents are dedicated to helping you find the perfect home, office, or investment property. Whether you’re buying, selling, or renting, our experienced team provides personalized service, in-depth market insights, and seamless transactions."
+                faceLink="[https://www.facebook.com/venkat,https://www.facebook.com/venkatreddy,https://www.facebook.com/navaneetha,https://www.facebook.com/fimidha]"
+                heading="Property Agents"
+                id="propertyAgents"
+                instaLink="[https://www.instagram.com/venkat,https://www.instagram.com/venkatreddy,https://www.instagram.com/navaneetha,https://www.instagram.com/fimidha]"
+                twitLink="[https://www.twitter.com/venkat,https://www.twitter.com/venkatreddy,https://www.twitter.com/navaneetha,https://www.twitter.com/fimidha]">
+                <agents jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        agentDesignation="Realtor"
+                        agentImgReference="/content/dam/fiwt/makaan/team-4.jpg"
+                        agentName="venkat"
+                        alt="venkat Img"
+                        faceLink="https://www.facebook.com/venkat"
+                        instaLink="https://www.instagram.com/venkat"
+                        twitLink="https://www.twitter.com/venkat"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        agentDesignation="Real Estate Agent"
+                        agentImgReference="/content/dam/fiwt/makaan/team-3.jpg"
+                        agentName="Navaneetha"
+                        alt="Navaneetha Img"
+                        faceLink="https://www.facebook.com/Navaneetha"
+                        instaLink="https://www.instagram.com/Navaneetha"
+                        twitLink="https://www.twitter.com/Navaneetha"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        agentDesignation="Realtor"
+                        agentImgReference="/content/dam/fiwt/makaan/team-2.jpg"
+                        agentName="venkat reddy"
+                        alt="venkat reddy Img"
+                        faceLink="https://www.facebook.com/venkatreddy"
+                        instaLink="https://www.instagram.com/venkatreddy"
+                        twitLink="https://www.twitter.com/venkatreddy"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        agentDesignation="Realtor"
+                        agentImgReference="/content/dam/fiwt/makaan/team-1.jpg"
+                        agentName="Faimeedha"
+                        alt="Faimeedha Img"
+                        faceLink="https://www.facebook.com/Faimeedha"
+                        instaLink="https://www.instagram.com/Faimeedha"
+                        twitLink="https://www.twitter.com/Faimeedha"/>
+                </agents>
+            </agentsteam>
         </root>
         <cq:featuredimage
             jcr:lastModified="{Date}2025-01-29T22:01:40.383+05:30"

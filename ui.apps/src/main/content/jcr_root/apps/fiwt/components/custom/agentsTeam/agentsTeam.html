@@ -1,0 +1,47 @@
+<sly data-sly-use.model="com.adobe.aem.social.fiwt.core.models.AgentTeamModel" />
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" />
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-teaser'}"></sly>
+<sly data-sly-test="${model.heading || model.agents}">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <sly data-sly-test="${model.heading || model.description }">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
+                    style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <sly data-sly-test="${model.heading}">
+                        <h1 class="mb-3">${model.heading}</h1>
+                    </sly>
+                    <sly data-sly-test="${model.description}">
+                        <p>${model.description}</p>
+                    </sly>
+                </div>
+            </sly>
+            <sly data-sly-test="${model.agents}">
+                <div class="row g-4">
+                    <sly data-sly-list.item="${model.agents}">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"
+                            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                            <div class="team-item rounded overflow-hidden">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="${item.agentImgReference}" alt="${item.alt}">
+                                    <div
+                                        class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                        <sly data-sly-test="${item.faceLink}"><a class="btn btn-square mx-1"
+                                                href="${item.faceLink}"><i class="fab fa-facebook-f"></i></a></sly>
+                                        <sly data-sly-test="${item.twitLink}"><a class="btn btn-square mx-1"
+                                                href="${item.twitLink}"><i class="fab fa-twitter"></i></a></sly>
+                                        <sly data-sly-test="${item.instaLink}"><a class="btn btn-square mx-1"
+                                                href="${item.instaLink}"><i class="fab fa-instagram"></i></a></sly>
+                                    </div>
+                                </div>
+                                <div class="text-center p-4 mt-3">
+                                    <h5 class="fw-bold mb-0">${item.agentName}</h5>
+                                    <small>${item.agentDesignation}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </sly>
+                </div>
+            </sly>
+        </div>
+    </div>
+</sly>
