@@ -3,17 +3,204 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2025-02-03T23:00:32.204+05:30"
+        cq:isDelivered="{Boolean}false"
+        cq:lastModified="{Date}2025-02-12T23:43:20.232+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+        cq:lastReplicatedBy="workflow-process-service"
+        cq:lastReplicatedBy_publish="workflow-process-service"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
         cq:template="/conf/fiwt/settings/wcm/templates/property-page-template"
+        jcr:mixinTypes="[cq:ReplicationStatus2]"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="fiwt/components/page">
         <root
-            jcr:lastModified="{Date}2025-02-03T22:54:59.449+05:30"
+            jcr:lastModified="{Date}2025-02-12T23:42:30.959+05:30"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/responsivegrid"
-            editable="{Boolean}true"/>
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <navbar
+                jcr:created="{Date}2025-01-28T23:30:09.738+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-02-01T21:33:53.703+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fiwt/components/custom/navBar"
+                btnLinkURL="/content/fiwt/lm/en/home/properties/addProperty"
+                btnText="Add Property"
+                heading="Makaan"
+                id="makaanNavigation"
+                logoAlt="logo"
+                LogoLinkURL="/content/fiwt/lm/en/home"
+                logoReference="/content/dam/fiwt/makaan/icon-deal.png">
+                <navigations jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/home"
+                        navLabel="HOME"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/about"
+                        navLabel="ABOUT"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/home/properties"
+                        navLabel="PROPERTY">
+                        <subNavigations jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/home/properties/propertyList"
+                                subNavLabel="Property List"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/home/properties/propertyType"
+                                subNavLabel="Property Type"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/home/properties/propertyAgent"
+                                subNavLabel="Property Agent"/>
+                        </subNavigations>
+                    </item2>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/pages"
+                        navLabel="PAGES">
+                        <subNavigations jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/pages/testimonial"
+                                subNavLabel="Testimonial"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                linkURL="/content/fiwt/lm/en/pages/errorPage"
+                                subNavLabel="404 Page"/>
+                        </subNavigations>
+                    </item3>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        linkURL="/content/fiwt/lm/en/conatct"
+                        navLabel="CONTACT"/>
+                </navigations>
+            </navbar>
+            <responsivegrid
+                jcr:created="{Date}2025-02-12T23:42:42.413+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-02-12T23:42:42.413+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid>
+            <footer
+                jcr:created="{Date}2025-02-12T20:04:23.585+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-02-12T23:31:47.425+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fiwt/components/custom/footer"
+                aboutHeading="Get In Touch"
+                address="123 Street, New York, USA"
+                buttonText="SignUp"
+                copyRight="&lt;p>© &lt;a class=&quot;border-bottom&quot; href=&quot;#&quot;>Makaan&lt;/a>, All Right Reserved. Designed By &lt;a class=&quot;border-bottom&quot; href=&quot;https://www.makaan.com&quot;>Venkat Designer&lt;/a>&lt;/p>&#xd;&#xa;"
+                email="makaan@gmail.com"
+                galleryHeading="Photo Gallery"
+                id="makaanFooter"
+                inputBoxId="footerSignUp"
+                newsLetterHeading="News Letter"
+                newsletterSubHeading="Sign Up for Exclusive Property Updates!"
+                phone="+012 345 67890"
+                placeHolderText="Your Email"
+                quickLinkHeading="Quick Links"
+                textIsRich="true">
+                <socialMediaLinks jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        socialMediaFaClass="fa-twitter"
+                        socialMediaHref="https://www.twitter.com/makaan"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        socialMediaFaClass="fa-facebook-f"
+                        socialMediaHref="https://www.facebook.com/makaan"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        socialMediaFaClass="fa-youtube"
+                        socialMediaHref="https://www.youtube.com/makaan"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        socialMediaFaClass="fa-linkedin-in"
+                        socialMediaHref="#"/>
+                </socialMediaLinks>
+                <quickLinks jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        link="/content/fiwt/lm/en/about"
+                        text="About Us"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        link="/content/fiwt/lm/en/conatct"
+                        text="Contact Us"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        link="/content/fiwt/lm/en/pages/ourServices"
+                        text="Our Services"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        link="#"
+                        text="Privacy Policy"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        link="#"
+                        text="Terms &amp; Conditions"/>
+                </quickLinks>
+                <galleryImages jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        alt="Property 1"
+                        imgReference="/content/dam/fiwt/makaan/property-1.jpg"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        alt="Property 2"
+                        imgReference="/content/dam/fiwt/makaan/property-2.jpg"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        alt="Property 3"
+                        imgReference="/content/dam/fiwt/makaan/property-3.jpg"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        alt="Property 4"
+                        imgReference="/content/dam/fiwt/makaan/property-4.jpg"/>
+                    <item4
+                        jcr:primaryType="nt:unstructured"
+                        alt="Property 5"
+                        imgReference="/content/dam/fiwt/makaan/property-5.jpg"/>
+                    <item5
+                        jcr:primaryType="nt:unstructured"
+                        alt="Property 6"
+                        imgReference="/content/dam/fiwt/makaan/property-6.jpg"/>
+                </galleryImages>
+                <footerLinks jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        link="/content/fiwt/lm/en/home"
+                        text="Home"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        link="#"
+                        text="Cookies"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        link="#"
+                        text="Help"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        link="#"
+                        text="FAQs"/>
+                </footerLinks>
+            </footer>
+        </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
                 <phone

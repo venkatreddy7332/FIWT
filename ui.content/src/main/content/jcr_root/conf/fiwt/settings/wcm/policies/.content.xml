@@ -13,7 +13,16 @@
                         jcr:title="Content Form"
                         sling:resourceType="wcm/core/components/policy/policy"
                         components="[/apps/fiwt/components/form/button,/apps/fiwt/components/form/hidden,/apps/fiwt/components/form/options,/apps/fiwt/components/form/text]">
-                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <jcr:content
+                            cq:isDelivered="{Boolean}false"
+                            cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicatedBy="workflow-process-service"
+                            cq:lastReplicatedBy_publish="workflow-process-service"
+                            cq:lastReplicationAction="Activate"
+                            cq:lastReplicationAction_publish="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                            jcr:primaryType="nt:unstructured"/>
                     </form-container>
                 </container>
             </form>
@@ -43,7 +52,16 @@
                     jpegQuality="{Long}85"
                     titleValueFromDAM="true"
                     uuidDisabled="true">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                     <plugins jcr:primaryType="nt:unstructured">
                         <crop
                             jcr:primaryType="nt:unstructured"
@@ -81,7 +99,16 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Text"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                     <rtePlugins jcr:primaryType="nt:unstructured">
                         <paraformat
                             jcr:primaryType="nt:unstructured"
@@ -174,7 +201,16 @@
                     allowedTypes="h1"
                     linkDisabled="true"
                     type="h1">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_641475696923109>
                 <policy_641528232375303
                     jcr:description="Allows all sizes, but not H1, which is reserved for the main page title."
@@ -184,7 +220,16 @@
                     allowedTypes="[h2,h3,h4,h5,h6]"
                     linkDisabled="false"
                     type="h2">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_641528232375303>
             </title>
             <experiencefragment jcr:primaryType="nt:unstructured">
@@ -194,7 +239,16 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Header"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_header>
                 <policy_footer
                     cq:styleDefaultElement="footer"
@@ -202,7 +256,16 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Footer"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_footer>
             </experiencefragment>
             <container jcr:primaryType="nt:unstructured">
@@ -212,7 +275,16 @@
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
                     components="[group:FIWT Sites Project - Content,/apps/fiwt/components/form/container,group:FIWT Sites Project - Structure]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
                             <mapping_1575024218483
@@ -245,7 +317,16 @@
                     sling:resourceType="wcm/core/components/policy/policy"
                     components="[group:FIWT Sites Project - Content,/apps/fiwt/components/form/container]"
                     layoutDisabled="false">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
                             <mapping_1575030255082
@@ -275,7 +356,16 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Main"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
@@ -315,7 +405,16 @@
                     sling:resourceType="wcm/core/components/policy/policy"
                     components="[group:General,group:FIWT Sites Project - Content,group:FIWT Sites Project - Form,group:FIWT Sites Project - Structure]"
                     layoutDisabled="false">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_436207244359208>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
@@ -325,7 +424,16 @@
                     jcr:title="Content Teaser"
                     sling:resourceType="wcm/core/components/policy/policy"
                     titleType="h3">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_1575031387650>
             </teaser>
             <download jcr:primaryType="nt:unstructured">
@@ -339,7 +447,16 @@
                     displayFormat="true"
                     displaySize="true"
                     titleType="h3">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_1575032193319>
             </download>
             <page jcr:primaryType="nt:unstructured">
@@ -350,7 +467,16 @@
                     sling:resourceType="wcm/core/components/policy/policy"
                     clientlibs="[fiwt.dependencies,fiwt.site]"
                     clientlibsJsHead="fiwt.dependencies">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:isDelivered="{Boolean}false"
+                        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                        cq:lastReplicatedBy="workflow-process-service"
+                        cq:lastReplicatedBy_publish="workflow-process-service"
+                        cq:lastReplicationAction="Activate"
+                        cq:lastReplicationAction_publish="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
         </components>
@@ -371,6 +497,14 @@
                         clientlibs="wcm.foundation.components.page.responsive"
                         clientlibsAsync="true">
                         <jcr:content
+                            cq:isDelivered="{Boolean}false"
+                            cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicatedBy="workflow-process-service"
+                            cq:lastReplicatedBy_publish="workflow-process-service"
+                            cq:lastReplicationAction="Activate"
+                            cq:lastReplicationAction_publish="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
                             jcr:primaryType="nt:unstructured"
                             mergeList="{Boolean}true"/>
                     </default>
@@ -421,6 +555,14 @@
                             </assetToComponentMapping>
                         </cq:authoring>
                         <jcr:content
+                            cq:isDelivered="{Boolean}false"
+                            cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicatedBy="workflow-process-service"
+                            cq:lastReplicatedBy_publish="workflow-process-service"
+                            cq:lastReplicationAction="Activate"
+                            cq:lastReplicationAction_publish="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
                             jcr:primaryType="nt:unstructured"
                             mergeList="{Boolean}true"/>
                         <cq:styleGroups jcr:primaryType="nt:unstructured">
@@ -460,6 +602,78 @@
                             </item1>
                         </cq:styleGroups>
                     </default>
+                    <policy_515192653495250
+                        jcr:lastModified="{Date}2025-02-12T23:16:37.410+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Makaan Home Page"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,group:FIWT Sites Project - Content,group:FIWT Sites Project - Form,group:FIWT Sites Project - Structure]">
+                        <jcr:content
+                            cq:isDelivered="{Boolean}false"
+                            cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicatedBy="workflow-process-service"
+                            cq:lastReplicatedBy_publish="workflow-process-service"
+                            cq:lastReplicationAction="Activate"
+                            cq:lastReplicationAction_publish="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_515192653495250>
+                    <policy_516284959725125
+                        jcr:lastModified="{Date}2025-02-12T23:35:13.105+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Makaan Page"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,group:FIWT Sites Project - Content,group:FIWT Sites Project - Form,group:FIWT Sites Project - Structure]">
+                        <jcr:content
+                            cq:isDelivered="{Boolean}false"
+                            cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicatedBy="workflow-process-service"
+                            cq:lastReplicatedBy_publish="workflow-process-service"
+                            cq:lastReplicationAction="Activate"
+                            cq:lastReplicationAction_publish="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_516284959725125>
+                    <policy_516585967594166
+                        jcr:lastModified="{Date}2025-02-12T23:39:59.736+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Makaan Properties Template"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,group:FIWT Sites Project - Content,group:FIWT Sites Project - Form,group:FIWT Sites Project - Structure]">
+                        <jcr:content
+                            cq:isDelivered="{Boolean}false"
+                            cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicatedBy="workflow-process-service"
+                            cq:lastReplicatedBy_publish="workflow-process-service"
+                            cq:lastReplicationAction="Activate"
+                            cq:lastReplicationAction_publish="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_516585967594166>
+                    <policy_516783097801500
+                        jcr:lastModified="{Date}2025-02-12T23:43:13.163+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Makaan property Page"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,group:FIWT Sites Project - Content,group:FIWT Sites Project - Form,group:FIWT Sites Project - Structure]">
+                        <jcr:content
+                            cq:isDelivered="{Boolean}false"
+                            cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+                            cq:lastReplicatedBy="workflow-process-service"
+                            cq:lastReplicatedBy_publish="workflow-process-service"
+                            cq:lastReplicationAction="Activate"
+                            cq:lastReplicationAction_publish="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_516783097801500>
                 </responsivegrid>
             </components>
         </foundation>
