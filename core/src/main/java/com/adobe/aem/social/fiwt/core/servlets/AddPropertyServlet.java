@@ -45,7 +45,7 @@ public class AddPropertyServlet extends SlingAllMethodsServlet {
         if(page != null) {
             Resource idResource = page.adaptTo(Resource.class).getChild("jcr:content");
             int id = Integer.parseInt(idResource.getValueMap().get("id", String.class))+1;
-            Resource propertiesListRootResource = resolver.getResource(pagePath + "/jcr:content/root");
+            Resource propertiesListRootResource = resolver.getResource(pagePath + "/jcr:content/root/responsivegrid");
             if (resolver != null && propertiesListRootResource != null) {
 
                 Node pageRootNode = propertiesListRootResource.adaptTo(Node.class);

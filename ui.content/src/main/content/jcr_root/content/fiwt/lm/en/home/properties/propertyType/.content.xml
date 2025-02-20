@@ -2,11 +2,18 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-01-29T15:02:54.958+05:30"
+        cq:isDelivered="{Boolean}false"
+        cq:lastModified="{Date}2025-02-20T14:32:15.467+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2025-02-20T14:32:46.770+05:30"
+        cq:lastReplicated_publish="{Date}2025-02-20T14:32:46.770+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicatedBy_publish="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
         cq:template="/conf/fiwt/settings/wcm/templates/property-page-template"
         jcr:isCheckedOut="{Boolean}true"
-        jcr:mixinTypes="[mix:versionable]"
+        jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Property Type"
         jcr:uuid="30396461-7bc7-4e49-87cd-77c9050e256c"
@@ -17,7 +24,134 @@
             jcr:lastModified="{Date}2025-01-29T15:01:03.228+05:30"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <carouselheader
+                    jcr:created="{Date}2025-02-20T14:26:46.652+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-02-20T14:27:27.786+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fiwt/components/custom/carouselHeader"
+                    carouselReference="/content/dam/fiwt/makaan/carousel-2.jpg"
+                    heading="Property Type"
+                    textIsRich="true"
+                    type="header"/>
+                <propertysearch_copy
+                    jcr:created="{Date}2025-01-31T14:10:09.163+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-01-31T17:45:01.516+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fiwt/components/custom/propertySearch"
+                    btnId="searchBtn"
+                    btnText="Search"
+                    id="propertySearch"
+                    inputId="searchInput"
+                    locationId="locationType"
+                    locationsPath="/content/fiwt/lm/en/home/properties/propertyLocations"
+                    placeholder="Search Here"
+                    propertiesPath="/content/fiwt/lm/en/home/properties/propertyType"
+                    propertyTypeId="propertyType"
+                    type="manually">
+                    <typeOptions jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            text="House"
+                            value="house"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            text="Housing"
+                            value="housing"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            text="Apartment1"
+                            value="apartment"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            text="Villa"
+                            value="villa"/>
+                    </typeOptions>
+                    <locationOptions jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            text="Hyderabad"
+                            value="hyderabad"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            text="Banglore"
+                            value="banglore"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            text="Pune"
+                            value="pune"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            text="Delhi"
+                            value="delhi"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            text="Chennai"
+                            value="chennai"/>
+                    </locationOptions>
+                </propertysearch_copy>
+                <productscategory_cop
+                    jcr:created="{Date}2025-01-30T22:55:55.269+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-02-20T14:32:15.460+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fiwt/components/custom/productsCategory"
+                    description="Makaan offers a wide range of property types, including residential apartments, villas, independent houses, commercial properties, and land, catering to various lifestyles and investment needs. Whether you're seeking luxury, privacy, or business opportunities, there's something for everyone."
+                    heading="Property Categories"
+                    id="productCategory">
+                    <categories jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            imgReference="/content/dam/fiwt/makaan/icon-villa.png"
+                            name="Villa"
+                            totalProperties="123"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            imgReference="/content/dam/fiwt/makaan/icon-neighborhood.png"
+                            name="Neighborhood"
+                            totalProperties="120"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            imgReference="/content/dam/fiwt/makaan/icon-housing.png"
+                            name="Housing"
+                            totalProperties="281"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            imgReference="/content/dam/fiwt/makaan/icon-house.png"
+                            name="House"
+                            totalProperties="780"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            imgReference="/content/dam/fiwt/makaan/icon-condominium.png"
+                            name="Condominium"
+                            totalProperties="22"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            imgReference="/content/dam/fiwt/makaan/icon-apartment.png"
+                            name="Apartment"
+                            totalProperties="230"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            imgReference="/content/dam/fiwt/makaan/icon-luxury.png"
+                            name="Farmhouses"
+                            totalProperties="120"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            imgReference="/content/dam/fiwt/makaan/icon-condominium.png"
+                            name="Shop"
+                            totalProperties="733"/>
+                    </categories>
+                </productscategory_cop>
+            </responsivegrid>
+        </root>
     </jcr:content>
     <apartment/>
     <house/>

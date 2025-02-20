@@ -2,9 +2,17 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-02-03T23:04:53.932+05:30"
+        cq:isDelivered="{Boolean}false"
+        cq:lastModified="{Date}2025-02-12T23:43:13.168+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
+        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
+        cq:lastReplicatedBy="workflow-process-service"
+        cq:lastReplicatedBy_publish="workflow-process-service"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
         cq:policy="wcm/foundation/components/page/default"
+        jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
         jcr:primaryType="nt:unstructured"
         sling:resourceType="wcm/core/components/policies/mappings">
         <root
@@ -13,6 +21,10 @@
             sling:resourceType="wcm/core/components/policies/mapping">
             <container
                 cq:policy="fiwt/components/container/policy_436207244359208"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+            <responsivegrid
+                cq:policy="wcm/foundation/components/responsivegrid/policy_516783097801500"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/core/components/policies/mapping"/>
         </root>
