@@ -3,10 +3,10 @@
     jcr:primaryType="cq:Template">
     <jcr:content
         cq:isDelivered="{Boolean}false"
-        cq:lastModified="{Date}2025-02-12T23:39:59.742+05:30"
+        cq:lastModified="{Date}2025-02-24T23:06:33.088+05:30"
         cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2025-02-17T13:33:34.244+05:30"
-        cq:lastReplicated_publish="{Date}2025-02-17T13:33:34.244+05:30"
+        cq:lastReplicated="{Date}2025-02-24T23:07:50.831+05:30"
+        cq:lastReplicated_publish="{Date}2025-02-24T23:07:50.831+05:30"
         cq:lastReplicatedBy="admin"
         cq:lastReplicatedBy_publish="admin"
         cq:lastReplicationAction="Activate"

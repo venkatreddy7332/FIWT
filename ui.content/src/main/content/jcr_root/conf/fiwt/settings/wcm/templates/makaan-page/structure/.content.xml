@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
         cq:isDelivered="{Boolean}false"
-        cq:lastModified="{Date}2025-02-12T23:36:33.752+05:30"
+        cq:lastModified="{Date}2025-02-24T23:05:38.358+05:30"
         cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2025-02-13T00:31:23.168+05:30"
-        cq:lastReplicated_publish="{Date}2025-02-13T00:31:23.168+05:30"
-        cq:lastReplicatedBy="workflow-process-service"
-        cq:lastReplicatedBy_publish="workflow-process-service"
+        cq:lastReplicated="{Date}2025-02-24T23:07:50.831+05:30"
+        cq:lastReplicated_publish="{Date}2025-02-24T23:07:50.831+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicatedBy_publish="admin"
         cq:lastReplicationAction="Activate"
         cq:lastReplicationAction_publish="Activate"
         cq:template="/conf/fiwt/settings/wcm/templates/makaan-page"
-        jcr:mixinTypes="[cq:ReplicationStatus2]"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
+        jcr:uuid="790d1daa-b27b-48e2-8821-f5a63d309672"
         sling:resourceType="fiwt/components/page">
         <root
             jcr:lastModified="{Date}2025-02-12T23:34:10.980+05:30"
@@ -24,7 +26,7 @@
             <navbar
                 jcr:created="{Date}2025-01-28T23:30:09.738+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2025-02-01T21:33:53.703+05:30"
+                jcr:lastModified="{Date}2025-02-24T23:05:38.350+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="fiwt/components/custom/navBar"
@@ -80,7 +82,7 @@
                     </item3>
                     <item4
                         jcr:primaryType="nt:unstructured"
-                        linkURL="/content/fiwt/lm/en/conatct"
+                        linkURL="/content/fiwt/lm/en/contact"
                         navLabel="CONTACT"/>
                 </navigations>
             </navbar>
