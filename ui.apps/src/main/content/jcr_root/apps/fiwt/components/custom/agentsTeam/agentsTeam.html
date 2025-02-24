@@ -18,8 +18,9 @@
             <sly data-sly-test="${model.agents}">
                 <div class="row g-4">
                     <sly data-sly-list.item="${model.agents}">
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.${itemList.count}s"
-                            style="visibility: visible; animation-delay: 0.${itemList.count}s; animation-name: fadeInUp;">
+                    
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"
+                            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                             <div class="team-item rounded overflow-hidden">
                                 <div class="position-relative">
                                     <img class="img-fluid" src="${item.agentImgReference}" alt="${item.alt}">
