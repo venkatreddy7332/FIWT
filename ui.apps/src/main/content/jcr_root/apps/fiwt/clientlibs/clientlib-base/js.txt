@@ -6,5 +6,6 @@ easing.js
 easing.min.js
 main.js
 waypoints.min.js
-wow.min.js
+wow.min.js 
 addproperty.js
+propertyList.js

@@ -1,0 +1,111 @@
+<sly data-sly-use.model="com.adobe.aem.social.fiwt.core.models.FooterModel" />
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" />
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-teaser'}"></sly>
+
+<sly
+    data-sly-test="${model.aboutHeading || model.address || model.phone || model.email || model.socialMediaLinks || model.quickLinkHeading || model.quickLinks || model.galleryHeading || model.galleryImages || model.copyRight || model.footerLinks}">
+    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <sly
+                    data-sly-test="${model.aboutHeading || model.address || model.phone || model.email || model.socialMediaLinks}">
+                    <div class="col-lg-3 col-md-6">
+                        <sly data-sly-test="${model.aboutHeading}">
+                            <h5 class="text-white mb-4">${model.aboutHeading}</h5>
+                        </sly>
+                        <sly data-sly-test="${model.address}">
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>${model.address}</p>
+                        </sly>
+                        <sly data-sly-test="${model.phone}">
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        </sly>
+                        <sly data-sly-test="${model.email}">
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        </sly>
+                        <sly data-sly-test="${model.socialMediaLinks}">
+                            <div class="d-flex pt-2">
+                                <sly data-sly-list.socialMediaLinks="${model.socialMediaLinks}">
+                                    <a class="btn btn-outline-light btn-social"
+                                        href="${socialMediaLinks.socialMediaHref}"><i
+                                            class="fab ${socialMediaLinks.socialMediaFaClass}"></i></a>
+                                </sly>
+                            </div>
+                        </sly>
+                    </div>
+                </sly>
+                <sly data-sly-test="${model.quickLinkHeading || model.quickLinks}">
+                    <div class="col-lg-3 col-md-6">
+                        <sly data-sly-test="${model.quickLinkHeading}">
+                            <h5 class="text-white mb-4">Quick Links</h5>
+                        </sly>
+                        <sly data-sly-test="${model.quickLinks}">
+                            <sly data-sly-list.quickLinks="${model.quickLinks}">
+                                <a class="btn btn-link text-white-50"
+                                    href="${quickLinks.link @ extension='html'}">${quickLinks.text}</a>
+                            </sly>
+                        </sly>
+                    </div>
+                </sly>
+                <sly data-sly-test="${model.galleryHeading || model.galleryImages}">
+                    <div class="col-lg-3 col-md-6">
+                        <sly data-sly-test="${model.galleryHeading}">
+                            <h5 class="text-white mb-4">Photo Gallery</h5>
+                        </sly>
+                        <sly data-sly-test="${model.galleryImages}">
+                            <div class="row g-2 pt-2">
+                                <sly data-sly-list.galleryImages="${model.galleryImages}">
+                                    <div class="col-4">
+                                        <img class="img-fluid rounded bg-light p-1" src="${galleryImages.imgReference}"
+                                            alt="${galleryImages.alt}">
+                                    </div>
+                                </sly>
+                            </div>
+                        </sly>
+                    </div>
+                </sly>
+                <sly
+                    data-sly-test="${model.newsLetterHeading || model.newsletterSubHeading || model.inputBoxId || model.buttonText}">
+                    <div class="col-lg-3 col-md-6">
+                        <sly data-sly-test="${model.newsLetterHeading}">
+                            <h5 class="text-white mb-4">${model.newsLetterHeading}</h5>
+                        </sly>
+                        <sly data-sly-test="${model.newsletterSubHeading}">
+                            <p>${model.newsletterSubHeading}</p>
+                        </sly>
+                        <sly data-sly-test="${model.inputBoxId || model.buttonText}">
+                            <div class="position-relative mx-auto" style="max-width: 400px;">
+                                <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                    id="${model.inputBoxId}" placeholder="${model.placeHolderText}">
+                                <button type="button"
+                                    class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                                    id="${model.inputBoxId}Button">${model.buttonText}</button>
+                            </div>
+                        </sly>
+                    </div>
+                </sly>
+            </div>
+        </div>
+        <sly data-sly-test="${model.copyRight || model.footerLinks}">
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <sly data-sly-test="${model.copyRight}">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                ${model.copyRight @context='html'}
+                            </div>
+                        </sly>
+                        <sly data-sly-test="${model.footerLinks}">
+                            <div class="col-md-6 text-center text-md-end">
+                                <div class="footer-menu">
+                                    <sly data-sly-list.footerLinks="${model.footerLinks}">
+                                        <a href="${footerLinks.link @ extension='html'}">${footerLinks.text}</a>
+                                    </sly>
+                                </div>
+                            </div>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </sly>
+    </div>
+</sly>

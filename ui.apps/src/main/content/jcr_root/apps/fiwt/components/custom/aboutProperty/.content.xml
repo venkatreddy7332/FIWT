@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    cq:isDelivered="{Boolean}false"
+    cq:lastReplicated="{Date}2025-02-13T00:41:10.203+05:30"
+    cq:lastReplicated_publish="{Date}2025-02-13T00:41:10.203+05:30"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicatedBy_publish="admin"
+    cq:lastReplicationAction="Activate"
+    cq:lastReplicationAction_publish="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
     jcr:primaryType="cq:Component"
     jcr:title="Makaan About Property Component"
     componentGroup="FIWT Sites Project - Content"/>

@@ -1,0 +1,7 @@
+<sly data-sly-use.model="com.adobe.aem.social.fiwt.core.models.ErrorPageModel" />
+
+
+
+<script>
+location.replace("/content/fiwt/lm/en/pages/errorPage.html? error=${model.errorCode @context='scriptString'} & erorrTitle=${model.errorMessage @context='scriptString'}")
+</script>

@@ -1,9 +1,11 @@
-<sly data-sly-use.model="com.adobe.aem.social.fiwt.core.models.PropertyListModel">
-
+<sly data-sly-use.model="com.adobe.aem.social.fiwt.core.models.PropertyListModel"/>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-teaser'}"></sly>
+<sly data-sly-test="${model.heading || model.description || model.filters}">
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-0 gx-5 align-items-end">
-                <sly data-sly-test="${model.heading && model.description}">
+                <sly data-sly-test="${model.heading || model.description}">
                     <div class="col-lg-6">
                         <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
                             <sly data-sly-test="${model.heading}">
@@ -28,21 +30,22 @@
                         </ul>
                     </div>
                 </sly>
+                <sly data-sly-test="${model.browseMoreBtnText}">
                 <div class="tab-content" id="propertyListCards">
                     <div id="browsemore">
                         <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
                             <a class="btn btn-primary py-3 px-5"
-                                href="${model.browseMoreBtnHref @extension='html'}">${model.browseMoreBtnText}</a>
+                                href="${model.browseMoreBtnHref ? model.browseMoreBtnHref : '#' @extension='html'}">${model.browseMoreBtnText}</a>
                         </div>
                     </div>
                 </div>
+                </sly>
             </div>
         </div>
 </sly>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-    let browsemore = "";
+let browsemore = "";
     if (document.getElementById("browsemore")) {
         browsemore = document.getElementById("browsemore").innerHTML;
     }
@@ -50,7 +53,7 @@
     		getPropertyData(null);
         document.querySelectorAll(".getdata").forEach(btn => {
             btn.addEventListener("click", function (event) {
-                event.preventDefault(); // Prevents the default anchor action (optional)
+                event.preventDefault(); 
                 let filter = this.getAttribute("filter");
                 if (filter == "-") {
                     filter = null;
@@ -71,7 +74,7 @@
                         if (data != null) {
 
                             for (let i = 0; i < data.length; i++) {
-                                propertyList += "<div class='col-lg-4 col-md-6 wow fadeInUp' data-wow-delay='0.1s' style='visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;'>" +
+                                propertyList += "<div class='col-lg-4 col-md-6 wow fadeInUp' data-wow-delay=0."+i+"s' style='visibility: visible; animation-delay:0."+i+"s'; animation-name: fadeInUp;'>" +
                                     "<div class='property-item rounded overflow-hidden'>" +
                                     "<div class='position-relative overflow-hidden'>" +
                                     "<a href=''><img class='img-fluid' src='" + data[i].propertyImage + "' alt=''></a>" +
@@ -105,3 +108,7 @@
                 });
     }
 </script>
+
+
+
+
