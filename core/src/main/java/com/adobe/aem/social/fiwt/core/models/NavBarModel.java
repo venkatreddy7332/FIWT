@@ -1,6 +1,7 @@
 package com.adobe.aem.social.fiwt.core.models;
 
 import com.adobe.aem.social.fiwt.core.models.Navigation.Navigations;
+import com.adobe.cq.export.json.ComponentExporter;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
@@ -10,8 +11,12 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import java.util.List;
 
-@Model(adaptables = Resource.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class NavBarModel {
+@Model(adaptables = Resource.class,
+        adapters = ComponentExporter.class,
+        resourceType = "fiwt/components/custom/carouselHeader",
+        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+
+public class NavBarModel implements ComponentExporter {
 
     @ValueMapValue
     private String logoReference;
@@ -67,5 +72,10 @@ public class NavBarModel {
 
     public String getLogoLinkURL() {
         return LogoLinkURL;
+    }
+
+    @Override
+    public String getExportedType() {
+        return "";
     }
 }

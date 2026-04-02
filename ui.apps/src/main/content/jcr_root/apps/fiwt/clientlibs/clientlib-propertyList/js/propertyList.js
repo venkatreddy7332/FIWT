@@ -1,33 +1,7 @@
-let browsemore = "";
-    if (document.getElementById("browsemore")) {
-        browsemore = document.getElementById("browsemore").innerHTML;
-    }
-    if (document.querySelectorAll(".getdata")) {
-    		getPropertyData(null);
-        document.querySelectorAll(".getdata").forEach(btn => {
-            btn.addEventListener("click", function (event) {
-                event.preventDefault(); // Prevents the default anchor action (optional)
-                let filter = this.getAttribute("filter");
-                if (filter == "-") {
-                    filter = null;
-                }
-                getPropertyData(filter);
-            });
-        });
-    }
-    function getPropertyData(filter){
-        $.ajax({
-                    type: "GET",
-                    url: '${resource.path @ context="scriptString"}' + '.json',
-                    data: { filter: filter },
-
-                    success: function (data, textStatus, jqXHR) {
-
-                        let propertyList = "";
-                        if (data != null) {
-
+function getPropertyCards(data){
+    let propertyListCards= "";
                             for (let i = 0; i < data.length; i++) {
-                                propertyList += "<div class='col-lg-4 col-md-6 wow fadeInUp' data-wow-delay='0.1s' style='visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;'>" +
+                                propertyListCards += "<div class='col-lg-4 col-md-6 wow fadeInUp' data-wow-delay=0."+i+"s' style='visibility: visible; animation-delay:0."+i+"s'; animation-name: fadeInUp;'>" +
                                     "<div class='property-item rounded overflow-hidden'>" +
                                     "<div class='position-relative overflow-hidden'>" +
                                     "<a href=''><img class='img-fluid' src='" + data[i].propertyImage + "' alt=''></a>" +
@@ -48,6 +22,22 @@ let browsemore = "";
                                     "</div>";
 
                             }
+    return propertyListCards;
+}
+
+
+
+function getPropertyData(filter, resourcePath){
+        $.ajax({
+                    type: "GET",
+                    url: resourcePath + '.json',
+                    data: { filter: filter },
+
+                    success: function (data, textStatus, jqXHR) {
+
+                        let propertyList = "";
+                        if (data != null) {
+							propertyList = getPropertyCards(data);
                             document.getElementById("propertyListCards").innerHTML = "<div class='tab-pane fade show p-0 active'>" +
                                 "<div class='row g-4'>" + propertyList + browsemore
                             "</div>" +

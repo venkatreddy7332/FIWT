@@ -4,7 +4,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:isDelivered="{Boolean}false"
-        cq:lastModified="{Date}2025-02-20T14:31:57.577+05:30"
+        cq:lastModified="{Date}2025-03-01T14:33:21.787+05:30"
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2025-02-20T14:32:06.662+05:30"
         cq:lastReplicated_publish="{Date}2025-02-20T14:32:06.662+05:30"
@@ -57,7 +57,7 @@
                 <propertysearch
                     jcr:created="{Date}2025-01-31T14:10:09.163+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-01-31T17:45:01.516+05:30"
+                    jcr:lastModified="{Date}2025-03-01T14:33:21.775+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="fiwt/components/custom/propertySearch"
@@ -65,7 +65,7 @@
                     btnText="Search"
                     id="propertySearch"
                     inputId="searchInput"
-                    locationId="locationType"
+                    locationId="location"
                     locationsPath="/content/fiwt/lm/en/home/properties/propertyLocations"
                     placeholder="Search Here"
                     propertiesPath="/content/fiwt/lm/en/home/properties/propertyType"
@@ -329,4 +329,5 @@
             fileReference="/content/dam/fiwt/makaan/carousel-1.jpg"/>
     </jcr:content>
     <properties/>
+    <search/>
 </jcr:root>
