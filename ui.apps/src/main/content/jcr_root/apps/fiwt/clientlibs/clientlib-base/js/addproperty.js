@@ -200,3 +200,30 @@ if(document.getElementsByClassName("property")){
 }
 
 
+
+
+const form = document.getElementById("imageUploadForm");
+const data = new FormData(form);
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+ 
+
+                
+                     $.ajax({
+                         type: "POST",
+                         url: '/bin/uploadimage.html',
+                         data: data,
+                         cache:false,
+                         processData: false,
+                         contentType:false,
+                         success: function(data, textStatus, jqXHR) {
+                             alert(data);
+                         },
+                         error: function(XMLHttpRequest, textStatus, errorThrown) {
+                             alert(errorThrown);
+                         }
+                     });
+                 });
+             
+

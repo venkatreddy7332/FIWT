@@ -44,6 +44,9 @@ import org.slf4j.LoggerFactory;
 @ServiceVendor("Adobe")
 public class LoggingFilter implements Filter {
 
+
+
+
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Override

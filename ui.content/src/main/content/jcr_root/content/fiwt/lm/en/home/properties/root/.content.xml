@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
-    <jcr:content
+    <content
         cq:isDelivered="{Boolean}false"
         cq:lastModified="{Date}2025-02-12T23:44:56.039+05:30"
         cq:lastModifiedBy="admin"
@@ -16,7 +16,7 @@
         jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Property List"
-        jcr:uuid="29ffc62f-e7ba-4664-958f-a3330e97c450"
+        jcr:uuid="d72dd5c1-2e09-4708-9e8b-022c610b19bc"
         sling:resourceType="fiwt/components/page"
         id="10000011"
         navTitle="Property List"
@@ -12032,5 +12032,5 @@
                 </property10000399>
             </responsivegrid>
         </root>
-    </jcr:content>
+    </content>
 </jcr:root>

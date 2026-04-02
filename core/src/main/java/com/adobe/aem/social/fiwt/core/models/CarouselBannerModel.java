@@ -1,18 +1,25 @@
 package com.adobe.aem.social.fiwt.core.models;
 
+import com.adobe.cq.export.json.ComponentExporter;
+import com.adobe.cq.export.json.ExporterConstants;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.*;
 
 import javax.annotation.PostConstruct;
 import java.util.*;
 
-@Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class CarouselBannerModel {
+@Model(adaptables = Resource.class,
+        adapters = {CarouselBannerModel.class, ComponentExporter.class},
+        resourceType = "fiwt/components/custom/carouselHeader",
+        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
+public class CarouselBannerModel implements ComponentExporter{
 
     @ValueMapValue
     private String heading;
@@ -107,5 +114,10 @@ public class CarouselBannerModel {
 
     public String getText() {
         return text;
+    }
+
+    @Override
+    public String getExportedType() {
+        return "fiwt/components/custom/carouselHeader";
     }
 }

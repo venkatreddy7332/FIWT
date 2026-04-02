@@ -10,7 +10,9 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
+import org.apache.sling.engine.SlingSettingsService;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
 
 import javax.jcr.Node;
 import javax.jcr.RepositoryException;
@@ -28,6 +30,9 @@ import java.util.Random;
         "sling.servlet.methods=" + "POST"})
 
 public class AddPropertyServlet extends SlingAllMethodsServlet {
+
+    @Reference
+    private SlingSettingsService slingSettingsService;
 
     @Override
     protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws ServletException, IOException {
