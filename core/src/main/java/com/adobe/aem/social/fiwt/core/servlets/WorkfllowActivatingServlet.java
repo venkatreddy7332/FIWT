@@ -46,7 +46,7 @@ public class WorkfllowActivatingServlet extends SlingAllMethodsServlet {
                WorkflowSession workflowSession =  workflowService.getWorkflowSession(session);
               WorkflowModel model = workflowSession.getModel("/var/workflow/models/pageActivationModel");
               WorkflowData workflowData = workflowSession.newWorkflowData("JCR_PATH",payLoad);
-              Workflow ss = workflowSession.startWorkflow(model, workflowData);
+              workflowSession.startWorkflow(model, workflowData);
               log.info("Workflow started for the payload : {}", payLoad);
             } catch (WorkflowException e) {
                 throw new RuntimeException(e);
